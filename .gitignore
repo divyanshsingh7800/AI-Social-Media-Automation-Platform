@@ -9,3 +9,5 @@ meta_oauth_temp/
 x_oauth_temp.json
 generated/
 .streamlit/secrets.toml
+
+venv.zip
