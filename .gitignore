@@ -1,0 +1,11 @@
+.env
+venv/
+venvpy/
+__pycache__/
+*.pyc
+social_media.db
+oauth_temp/
+meta_oauth_temp/
+x_oauth_temp.json
+generated/
+.streamlit/secrets.toml
