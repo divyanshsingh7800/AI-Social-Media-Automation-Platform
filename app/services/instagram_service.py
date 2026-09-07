@@ -11,6 +11,9 @@ load_dotenv()
 META_APP_ID = os.getenv("META_APP_ID")
 META_APP_SECRET = os.getenv("META_APP_SECRET")
 META_REDIRECT_URI = os.getenv("META_REDIRECT_URI")
+INSTAGRAM_APP_ID = os.getenv("INSTAGRAM_APP_ID")
+INSTAGRAM_APP_SECRET = os.getenv("INSTAGRAM_APP_SECRET")
+INSTAGRAM_REDIRECT_URI = os.getenv("META_REDIRECT_URI")
 
 
 # --------------------------------------------------
@@ -22,8 +25,8 @@ def get_instagram_authorization_url():
     state = secrets.token_urlsafe(32)
 
     params = {
-        "client_id": META_APP_ID,
-        "redirect_uri": META_REDIRECT_URI,
+        "client_id": INSTAGRAM_APP_ID,
+        "redirect_uri": INSTAGRAM_REDIRECT_URI,
         "response_type": "code",
         "scope": (
             "instagram_business_basic,"
@@ -38,7 +41,6 @@ def get_instagram_authorization_url():
     )
 
     return auth_url, state
-
 
 # --------------------------------------------------
 # TOKEN EXCHANGE
