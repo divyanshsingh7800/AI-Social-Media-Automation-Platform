@@ -84,7 +84,7 @@ def show_history():
 
                     st.image(
                         post_image_path,
-                        use_container_width=True
+                        width="stretch"
                     )
 
                 except Exception:

@@ -41,7 +41,7 @@ def show_schedule():
 
     if st.button(
         "📅 Schedule Post",
-        use_container_width=True
+        width="stretch"
     ):
 
         scheduled_at = (

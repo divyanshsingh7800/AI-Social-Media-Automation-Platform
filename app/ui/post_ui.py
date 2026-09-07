@@ -24,7 +24,7 @@ def show_post_creator():
 
     if st.button(
         "✨ Generate Content",
-        use_container_width=True
+        width="stretch"
     ):
 
         if not topic.strip():
@@ -146,7 +146,7 @@ def show_post_creator():
             st.session_state[
                 "image_path"
             ],
-            use_container_width=True
+            width="stretch"
         )
 
 
@@ -206,7 +206,7 @@ def show_post_creator():
 
     if st.button(
         "💾 Save Changes",
-        use_container_width=True
+        width="stretch"
     ):
 
         try:
@@ -255,7 +255,7 @@ def show_post_creator():
 
     if st.button(
         "🔄 Regenerate Image",
-        use_container_width=True
+        width="stretch"
     ):
 
         try:

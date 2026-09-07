@@ -466,7 +466,7 @@ def show_social_accounts():
             if st.button(
                 "Connect X",
                 key="connect_x",
-                use_container_width=True
+                width="stretch"
             ):
 
                 try:
@@ -496,7 +496,7 @@ def show_social_accounts():
                     st.session_state[
                         "x_auth_url"
                     ],
-                    use_container_width=True
+                    width="stretch"
                 )
 
     # Facebook
@@ -509,7 +509,7 @@ def show_social_accounts():
         if st.button(
                 "Connect Facebook",
                 key="connect_facebook",
-                use_container_width=True
+                width="stretch"
         ):
 
             try:
@@ -544,7 +544,7 @@ def show_social_accounts():
                 st.session_state[
                     "facebook_auth_url"
                 ],
-                use_container_width=True
+                width="stretch"
             )
 
     # Instagram
@@ -572,7 +572,7 @@ def show_social_accounts():
             if st.button(
                 "🔗 Connect Instagram",
                 key="connect_instagram",
-                use_container_width=True
+                width="stretch"
             ):
 
                 auth_url, state = get_instagram_authorization_url()
@@ -593,5 +593,5 @@ def show_social_accounts():
                 st.link_button(
                 "👉 Continue with Instagram",
                 st.session_state["instagram_auth_url"],
-                use_container_width=True
+                width="stretch"
             )

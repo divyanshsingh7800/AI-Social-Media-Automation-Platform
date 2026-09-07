@@ -44,7 +44,7 @@ def show_authentication():
 
         if st.button(
             "Login",
-            use_container_width=True
+            width="stretch"
         ):
 
             if not login_email or not login_password:
@@ -130,7 +130,7 @@ def show_authentication():
 
         if st.button(
             "Create Account",
-            use_container_width=True
+            width="stretch"
         ):
 
             if not all([
@@ -205,7 +205,7 @@ def show_sidebar():
 
         if st.button(
             "🚪 Logout",
-            use_container_width=True
+            width="stretch"
         ):
 
             for key in [
